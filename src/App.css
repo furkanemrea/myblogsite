@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+#Bilgisol{
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  background-color:#e84393;
+  color:black;
+  font-family: 'Times New Roman', Times, serif;
+}
+#Bilgisol:hover{
+  color:white;
+  background-color: #6c5ce7;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+#Bilgi{
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+ 
+  color:black;
+  font-family: 'Times New Roman', Times, serif;
+}
+#Bilgi:hover{
+  color:white;
+  background-color: #f1f2f6;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
