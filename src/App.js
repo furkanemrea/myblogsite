@@ -12,7 +12,7 @@ import Teknoloji from "./components/Teknoloji";
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
+      <div>
         <Navbar ></Navbar>
         <div className="container">
         <Switch>
@@ -22,6 +22,7 @@ function App() {
         </Switch>
         </div>
       </div>
+      
       <ModalPage />
     </BrowserRouter>
   );

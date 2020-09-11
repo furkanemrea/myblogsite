@@ -38,8 +38,8 @@
 }
 #Bilgisol{
   position: fixed;
-  left: 0px;
-  bottom: 0px;
+  left: 10px;
+  bottom: 10px;
   background-color:#e84393;
   color:black;
   font-family: 'Times New Roman', Times, serif;
@@ -51,8 +51,8 @@
 }
 #Bilgi{
   position: fixed;
-  right: 0px;
-  bottom: 0px;
+  right: 10px;
+  bottom: 10px;
  
   color:black;
   font-family: 'Times New Roman', Times, serif;

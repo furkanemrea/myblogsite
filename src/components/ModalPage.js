@@ -3,30 +3,30 @@ import "../../src/App.css";
 
 import Fab from "@material-ui/core/Fab";
 import AddIcon from "@material-ui/icons/Add";
-import NavigationIcon from  "@material-ui/icons/Navigation"
+import ModalDetailsPage from './ModalDetailsPage'
 
 class ModalPage extends Component {
+  constructor(){
+    super();
+    this.state={
+      modalShow:false,
+    }
+    
+  }
   render() {
+    let modalClose=()=>this.setState({modalShow:false});
     return (
-      <div>
+      <div >
         <div
           id="Bilgisol"
           style={{ borderTopLeftRadius: "10px", borderTopRightRadius: "10px" }}
         >
-          <Fab color="primary" aria-label="add">
+          <Fab color="primary" aria-label="add" onClick={()=>this.setState({modalShow:true})}>
             <AddIcon />
           </Fab>
           Sosyal Medya
         </div>
-        <div
-          id="Bilgi"
-          style={{ borderTopLeftRadius: "10px", borderTopRightRadius: "10px" }}
-        >
-          <Fab variant="extended">
-            <NavigationIcon  />
-            Yukarı Çık
-          </Fab>
-        </div>
+        <ModalDetailsPage show={this.state.modalShow} onHide={modalClose}/>
       </div>
     );
   }

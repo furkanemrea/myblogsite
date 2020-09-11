@@ -24,7 +24,7 @@ class NavComp extends Component {
             <ul className="navbar-nav">
               <li className="nav-item">
                 <Link className="nav-link" to="/Info">
-                  Kişisel Bilgiler <span class="sr-only">(current)</span>
+                  Eğitim <span className="sr-only">(current)</span>
                 </Link>
               </li>
               <li className="nav-item">
@@ -40,7 +40,7 @@ class NavComp extends Component {
               <li className="nav-item dropdown">
                 <Link
                   className="nav-link dropdown-toggle"
-                  href="#"
+                  to="/"
                   id="navbarDropdownMenuLink"
                   data-toggle="dropdown"
                   aria-haspopup="true"
@@ -52,15 +52,15 @@ class NavComp extends Component {
                   className="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
-                  <a className="dropdown-item" href="#">
+                  <Link className="dropdown-item" to="/">
                     Action
-                  </a>
-                  <a className="dropdown-item" href="#">
+                  </Link>
+                  <Link className="dropdown-item" to="#">
                     Another action
-                  </a>
-                  <a className="dropdown-item" href="#">
+                  </Link>
+                  <Link className="dropdown-item" to="#">
                     Something else here
-                  </a>
+                  </Link>
                 </div>
               </li>
             </ul>
